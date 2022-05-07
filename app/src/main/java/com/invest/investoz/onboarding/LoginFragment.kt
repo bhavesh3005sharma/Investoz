@@ -37,7 +37,7 @@ class LoginFragment : Fragment() {
         binding.btnSignIn.setOnClickListener {
             if(binding.textEmail.text.isNullOrEmpty() ||
                 binding.textPassword.text.isNullOrEmpty()){
-                Toast.makeText((activity), "Please enter all the fields!", Toast.LENGTH_SHORT)
+                Toast.makeText((activity), "Please enter all the fields!", Toast.LENGTH_SHORT).show()
             }else {
                 mAuth.signInWithEmailAndPassword(binding.textEmail.text.toString(), binding.textPassword.text.toString()).addOnCompleteListener ( requireActivity(), OnCompleteListener<AuthResult> { task ->
                     if (task.isSuccessful) {

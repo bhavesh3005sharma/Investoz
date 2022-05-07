@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.activityViewModels
 import com.google.android.gms.common.internal.Objects
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
@@ -19,6 +20,8 @@ class EnterEmailPasswordFragment : Fragment() {
 
     private lateinit var binding: FragmentEnterEmailPasswordBinding
     var mAuth = FirebaseAuth.getInstance()
+
+    val viewModel: OnboardingActivityViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,10 +38,11 @@ class EnterEmailPasswordFragment : Fragment() {
             if(binding.textEmail.text.isNullOrEmpty() ||
                     binding.textPassword.text.isNullOrEmpty() ||
                     binding.textUsername.text.isNullOrEmpty()) {
-                Toast.makeText((activity), "Please enter all the fields!", Toast.LENGTH_SHORT)
+                Toast.makeText((activity), "Please enter all the fields!", Toast.LENGTH_SHORT).show()
             }else {
                 mAuth.createUserWithEmailAndPassword(binding.textEmail.text.toString(), binding.textPassword.text.toString()).addOnCompleteListener(requireActivity(), OnCompleteListener { task ->
                     if (task.isSuccessful) {
+                        viewModel.detail.value?.email = binding.textEmail.text.toString()
                         requireActivity().run {
                             startActivity(Intent(this, MainActivity::class.java))
                         }

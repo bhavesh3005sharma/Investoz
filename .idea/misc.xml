@@ -10,8 +10,8 @@
         <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.20833333333333334" />
         <entry key="app/src/main/res/layout/fragment_enter_details.xml" value="0.20833333333333334" />
         <entry key="app/src/main/res/layout/fragment_enter_email_password.xml" value="0.20833333333333334" />
-        <entry key="app/src/main/res/layout/fragment_enter_number.xml" value="0.20833333333333334" />
-        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_enter_number.xml" value="0.1369598388671875" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25133056640625" />
         <entry key="app/src/main/res/layout/fragment_user_type.xml" value="0.17996724446614581" />
         <entry key="app/src/main/res/layout/intro_first_page.xml" value="0.16352996826171878" />
         <entry key="app/src/main/res/layout/intro_second_page.xml" value="0.15534420289855072" />

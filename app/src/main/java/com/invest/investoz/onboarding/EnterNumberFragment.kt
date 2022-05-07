@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.FirebaseAuth
@@ -26,6 +27,7 @@ class EnterNumberFragment : Fragment() {
     private lateinit var mAuth: FirebaseAuth
     private lateinit var verificationId: String
 
+    val viewModel: OnboardingActivityViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -42,7 +44,7 @@ class EnterNumberFragment : Fragment() {
 
         binding.btnGetOTP.setOnClickListener {
             if(binding.textNumber.text.isNullOrEmpty()) {
-                Toast.makeText(activity, "Please enter mobile number", Toast.LENGTH_SHORT)
+                Toast.makeText(activity, "Please enter mobile number", Toast.LENGTH_SHORT).show()
             }else {
                 val phone = "+91"+binding.textNumber.text.toString()
                 sendVerificationCode(phone)
@@ -74,6 +76,8 @@ class EnterNumberFragment : Fragment() {
         object : OnVerificationStateChangedCallbacks() {
             override fun onCodeSent(s: String, forceResendingToken: ForceResendingToken) {
                 super.onCodeSent(s, forceResendingToken)
+
+                Toast.makeText(activity, "OTP Sent!", Toast.LENGTH_SHORT).show()
                 verificationId = s
             }
 
@@ -102,6 +106,7 @@ class EnterNumberFragment : Fragment() {
         mAuth.signInWithCredential(credential)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
+                    viewModel.detail.value?.contact = binding.textNumber.text.toString()
                     findNavController().navigate(R.id.action_enterNumberFragment_to_enterEmailPasswordFragment)
                 } else {
                     Toast.makeText(
