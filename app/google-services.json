@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "619481239155",
+    "project_id": "investoz",
+    "storage_bucket": "investoz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619481239155:android:2861b04055cacfb34a6406",
+        "android_client_info": {
+          "package_name": "com.invest.investoz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619481239155-fdquhb79elubolphk7en6g2pqbopr3gj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.invest.investoz",
+            "certificate_hash": "6680f2f8ca6ba3a73f300c85f10bbc50cdbd0f7c"
+          }
+        },
+        {
+          "client_id": "619481239155-27bkgp0ji0ill9353v4nh0cs48a4a5tf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxjDz1kWrV3JW4-D-wDqy_N-1XcXL4jXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619481239155-27bkgp0ji0ill9353v4nh0cs48a4a5tf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

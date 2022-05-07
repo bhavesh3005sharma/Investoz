@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../.gradle/caches/transforms-3/ef3f0f17448ca26d977db9bcb760fc55/transformed/appcompat-1.4.1/res/layout/support_simple_spinner_dropdown_item.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_forgot_password.xml" value="0.1975" />
+        <entry key="app/src/main/res/drawable/rectangle_orange_fill_corner.xml" value="0.1975" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_enter_details.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_enter_email_password.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_enter_number.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_user_type.xml" value="0.17996724446614581" />
+        <entry key="app/src/main/res/layout/intro_first_page.xml" value="0.16352996826171878" />
+        <entry key="app/src/main/res/layout/intro_second_page.xml" value="0.15534420289855072" />
+        <entry key="app/src/main/res/layout/intro_third_page.xml" value="0.15534420289855072" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/onboarding_navigation"
+    app:startDestination="@id/userTypeFragment">
+
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.invest.investoz.onboarding.LoginFragment"
+        android:label="LoginFragment">
+        <action
+            android:id="@+id/action_loginFragment_to_enterDetailsFragment"
+            app:destination="@id/enterDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/enterDetailsFragment"
+        android:name="com.invest.investoz.onboarding.EnterDetailsFragment"
+        android:label="EnterDetailsFragment" >
+        <action
+            android:id="@+id/action_enterDetailsFragment_to_enterNumberFragment"
+            app:destination="@id/enterNumberFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/enterNumberFragment"
+        android:name="com.invest.investoz.onboarding.EnterNumberFragment"
+        android:label="EnterNumberFragment" >
+        <action
+            android:id="@+id/action_enterNumberFragment_to_enterEmailPasswordFragment"
+            app:destination="@id/enterEmailPasswordFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/enterEmailPasswordFragment"
+        android:name="com.invest.investoz.onboarding.EnterEmailPasswordFragment"
+        android:label="EnterNumberFragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/userTypeFragment"
+        android:name="com.invest.investoz.onboarding.UserTypeFragment"
+        android:label="UserTypeFragment">
+        <action
+            android:id="@+id/action_userTypeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+</navigation>
