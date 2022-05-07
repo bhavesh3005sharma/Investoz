@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:title="Investments"
+        android:id="@+id/investments"
+        android:icon="@drawable/ic_investment"/>
+
+    <item
+        android:title="Pending"
+        android:id="@+id/pending"
+        android:icon="@drawable/ic_clock"/>
+
+    <item
+        android:title="About Us"
+        android:id="@+id/about_us"
+        android:icon="@drawable/ic_about_us"/>
+
+
+</menu>
