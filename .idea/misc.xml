@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../.gradle/caches/transforms-3/ef3f0f17448ca26d977db9bcb760fc55/transformed/appcompat-1.4.1/res/layout/support_simple_spinner_dropdown_item.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1975" />
         <entry key="app/src/main/res/drawable/ic_forgot_password.xml" value="0.1975" />
         <entry key="app/src/main/res/drawable/rectangle_orange_fill_corner.xml" value="0.1975" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />

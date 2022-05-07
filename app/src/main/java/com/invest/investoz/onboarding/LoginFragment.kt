@@ -34,6 +34,9 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.backButton.setOnClickListener {
+            findNavController().navigateUp()
+        }
         binding.btnSignIn.setOnClickListener {
             if(binding.textEmail.text.isNullOrEmpty() ||
                 binding.textPassword.text.isNullOrEmpty()){

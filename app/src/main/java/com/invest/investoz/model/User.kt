@@ -1,5 +1,6 @@
 package com.invest.investoz.model
 
+import android.net.Uri
 import android.os.Parcelable
 import androidx.annotation.Keep
 import kotlinx.parcelize.Parcelize
@@ -30,7 +31,7 @@ data class User(
     var profession: String? = null,
 
     @SerializedName("photoURI")
-    var photoUri: String? = null,
+    var photoUri: Uri? = null,
 
     @SerializedName("contact")
     var contact: String? = null

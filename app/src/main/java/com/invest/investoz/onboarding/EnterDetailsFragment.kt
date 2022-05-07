@@ -40,6 +40,10 @@ class EnterDetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.backButton.setOnClickListener {
+            findNavController().navigateUp()
+        }
+
         var cal = Calendar.getInstance()
         val dateSetListener = object : DatePickerDialog.OnDateSetListener {
             override fun onDateSet(
@@ -107,6 +111,7 @@ class EnterDetailsFragment : Fragment() {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == 0 && resultCode == Activity.RESULT_OK && data != null) {
             val uri: Uri? = data.data
+            viewModel.detail.value?.photoUri = uri
             binding.circleImageView.setImageURI(uri)
         }
     }

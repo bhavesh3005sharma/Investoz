@@ -51,6 +51,10 @@ class EnterNumberFragment : Fragment() {
             }
         }
 
+        binding.backButton.setOnClickListener {
+            findNavController().navigateUp()
+        }
+
         binding.btnVerifyOTP.setOnClickListener {
             if (TextUtils.isEmpty(binding.textOtp.getText().toString())) {
                 Toast.makeText(activity, "Please enter OTP", Toast.LENGTH_SHORT).show();
