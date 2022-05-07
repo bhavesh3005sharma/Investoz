@@ -1,31 +1,37 @@
 package com.invest.investoz.welcome
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import androidx.preference.PreferenceManager
 import com.github.paolorotolo.appintro.AppIntro2
+import com.google.firebase.auth.FirebaseAuth
 import com.invest.investoz.MainActivity
 import com.invest.investoz.R
 import com.invest.investoz.onboarding.OnboardingActivity
 
 class WelcomeActivity : AppIntro2() {
 
-    private lateinit var manager: PreferenceManager
+    val mAuth = FirebaseAuth.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //manager = PreferencesManager(this)
-        if (true) {
+        val preferences: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
+        if (preferences.getBoolean("welcome", true)) {
+            preferences.edit().putBoolean("welcome", false).apply()
             showIntroSlides()
-        } else {
+        } else if(mAuth.currentUser == null){
             goToMain()
+        }else {
+            goToMain()
+            //startActivity(Intent(this, MainActivity::class.java))
         }
     }
 
     private fun showIntroSlides() {
-        //manager.setFirstRun()
 
         addSlide(CustomTutorialFragment.newInstance(R.layout.intro_first_page))
         addSlide(CustomTutorialFragment.newInstance(R.layout.intro_second_page))

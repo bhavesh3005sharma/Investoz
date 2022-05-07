@@ -11,6 +11,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/circleImageView"
             android:layout_width="120dp"
@@ -45,13 +56,13 @@
             app:layout_constraintTop_toBottomOf="@+id/textView4">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/last_name"
+                android:id="@+id/full_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:fontFamily="@font/poppins_semibold"
                 android:singleLine="true"
-                android:hint="Last Name " />
+                android:hint="Full Name " />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -82,19 +93,20 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:orientation="horizontal"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_pan_layout">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/text_sex_layout"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
                 android:layout_weight="1"
+                android:layout_margin="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text_last_name_layout">
@@ -106,6 +118,7 @@
                     android:background="@drawable/rectangle_orange_fill_corner"
                     android:backgroundTint="@color/grey"
                     android:fontFamily="@font/poppins_semibold"
+                    android:editable="false"
                     android:hint="Sex "
                     android:inputType="none" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -115,20 +128,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
                 android:layout_weight="1"
+                android:layout_margin="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text_last_name_layout">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dob"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/rectangle_orange_fill_corner"
                     android:backgroundTint="@color/grey"
-                    android:drawableRight="@drawable/ic_baseline_date_range_24"
                     android:editable="false"
+                    android:drawableRight="@drawable/ic_baseline_date_range_24"
                     android:fontFamily="@font/poppins_semibold"
                     android:hint="DOB " />
             </com.google.android.material.textfield.TextInputLayout>
@@ -140,18 +153,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
             android:layout_marginRight="24dp"
             android:layout_marginTop="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
                 android:id="@+id/income"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rectangle_orange_fill_corner"
                 android:backgroundTint="@color/grey"
+                android:editable="false"
                 android:fontFamily="@font/poppins_semibold"
                 android:hint="Income Range " />
         </com.google.android.material.textfield.TextInputLayout>
@@ -161,6 +176,7 @@
             android:id="@+id/text_prof_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:layout_marginTop="16dp"
@@ -168,28 +184,33 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_income_layout">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
                 android:id="@+id/profession"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rectangle_orange_fill_corner"
                 android:backgroundTint="@color/grey"
+                android:editable="false"
                 android:fontFamily="@font/poppins_semibold"
                 android:hint="Profession " />
         </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnContinue"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_semibold"
             android:text="  Continue..."
             android:textColor="@color/orange"
             android:textSize="18sp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
             android:padding="8dp"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"
             android:background="@drawable/rectangle_orange_fill_corner"
             android:backgroundTint="#F6F6F6"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="24dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

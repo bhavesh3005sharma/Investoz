@@ -34,10 +34,13 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.backButton.setOnClickListener {
+            findNavController().navigateUp()
+        }
         binding.btnSignIn.setOnClickListener {
             if(binding.textEmail.text.isNullOrEmpty() ||
                 binding.textPassword.text.isNullOrEmpty()){
-                Toast.makeText((activity), "Please enter all the fields!", Toast.LENGTH_SHORT)
+                Toast.makeText((activity), "Please enter all the fields!", Toast.LENGTH_SHORT).show()
             }else {
                 mAuth.signInWithEmailAndPassword(binding.textEmail.text.toString(), binding.textPassword.text.toString()).addOnCompleteListener ( requireActivity(), OnCompleteListener<AuthResult> { task ->
                     if (task.isSuccessful) {

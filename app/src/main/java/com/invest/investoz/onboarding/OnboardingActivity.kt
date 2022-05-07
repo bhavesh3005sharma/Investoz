@@ -2,6 +2,7 @@ package com.invest.investoz.onboarding
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.invest.investoz.R
@@ -9,6 +10,7 @@ import com.invest.investoz.R
 class OnboardingActivity : AppCompatActivity() {
 
     protected lateinit var navController: NavController
+    val viewModel by viewModels<OnboardingActivityViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
