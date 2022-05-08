@@ -19,6 +19,9 @@ class MyInvestmentAdapter(
         fun bind(myInvestment: MyInvestment, position: Int, context: Context) : ItemMyInvestmentBinding {
             if(position==1) binding.circleImageView2.setImageDrawable(context.getDrawable(R.drawable.sample_investment_logo2))
             if(position==2) binding.circleImageView2.setImageDrawable(context.getDrawable(R.drawable.sample_investment_logo3))
+            if(position==3) {
+                binding.circleImageView2.setImageDrawable(context.getDrawable(R.drawable.sample_investment_logo4))
+            }
             binding.myInvestment = myInvestment
             return binding
         }

@@ -35,11 +35,13 @@ class InvestmentsFragment : Fragment() {
             "",
             "Pixis",
             "25.7L"),
-        MyInvestment("Kylo Apps is a software company based out of Delhi, India, offering software development services to clients all over the world. \n",
+        MyInvestment("Catfatindia is\n" +
+                "Distinctive fashion for the contemporary Indian\n" +
+                "with In-house capabilities in design.\n",
             "4.2%",
             "2%",
             "",
-            "Kylo Apps",
+            "Catfatindia",
             "18.2L")
     )
 

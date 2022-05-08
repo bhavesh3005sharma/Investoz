@@ -33,11 +33,13 @@ class PendingInvestmentFragment : Fragment() {
             "",
             "60K",
             "Pixis"),
-        PendingInvestment("Kylo Apps is a software company based out of Delhi, India, offering software development services to clients all over the world. \n",
+        PendingInvestment("Catfatindia is\n" +
+                "Distinctive fashion for the contemporary Indian\n" +
+                "with In-house capabilities in design.\n",
             "5%",
             "",
             "50K",
-            "Kylo Apps")
+            "Catfatindia")
     )
 
     override fun onCreateView(

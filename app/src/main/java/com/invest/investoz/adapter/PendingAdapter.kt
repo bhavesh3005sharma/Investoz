@@ -24,6 +24,9 @@ class PendingAdapter(
                 binding.circleImageView2.setImageDrawable(context.getDrawable(R.drawable.sample_investment_logo3))
                 binding.status.text = "Documented"
             }
+            if(position==3) {
+                binding.circleImageView2.setImageDrawable(context.getDrawable(R.drawable.sample_investment_logo4))
+            }
             binding.pendingInvestment = pendingInvestment
             return binding
         }
