@@ -1,6 +1,5 @@
 package com.invest.investoz.welcome
 
-import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -9,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.preference.PreferenceManager
 import com.github.paolorotolo.appintro.AppIntro2
 import com.google.firebase.auth.FirebaseAuth
-import com.invest.investoz.MainActivity
 import com.invest.investoz.R
 import com.invest.investoz.onboarding.OnboardingActivity
 
@@ -45,6 +43,7 @@ class WelcomeActivity : AppIntro2() {
 
     private fun goToMain() {
         startActivity(Intent(this, OnboardingActivity::class.java))
+        finish()
     }
 
     override fun onSkipPressed(currentFragment: Fragment?) {
