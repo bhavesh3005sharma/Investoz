@@ -22,7 +22,23 @@ class PendingInvestmentFragment : Fragment() {
     "50K",
     "Kylo Apps")
 
-    private val list = mutableListOf(model)
+    private val list = mutableListOf(model,
+        PendingInvestment("We worked with schools and companies like Google and Adobe to bring hands-on coding bootcamps to students .\n",
+            "5%",
+            "",
+            "50K",
+            "Campk12"),
+        PendingInvestment("We build incredibly advanced codeless AI infrastructure to help brands grow exponentially. Strengthened with over 4 dozen  contextual and self-evolving proprietary AI models, the infrastructure forms the very heart of our products.",
+            "5%",
+            "",
+            "60K",
+            "Pixis"),
+        PendingInvestment("Kylo Apps is a software company based out of Delhi, India, offering software development services to clients all over the world. \n",
+            "5%",
+            "",
+            "50K",
+            "Kylo Apps")
+    )
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,21 +50,6 @@ class PendingInvestmentFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        list.add(PendingInvestment("We worked with schools and companies like Google and Adobe to bring hands-on coding bootcamps to students .\n",
-            "5%",
-            "",
-            "50K",
-            "Campk12"))
-        list.add(PendingInvestment("We build incredibly advanced codeless AI infrastructure to help brands grow exponentially. Strengthened with over 4 dozen  contextual and self-evolving proprietary AI models, the infrastructure forms the very heart of our products.",
-            "5%",
-            "",
-            "60K",
-            "Pixis"))
-        list.add(PendingInvestment("Kylo Apps is a software company based out of Delhi, India, offering software development services to clients all over the world. \n",
-            "5%",
-            "",
-            "50K",
-            "Kylo Apps"))
 
         val adapter = PendingAdapter(list, requireActivity())
         binding.rvStartupsTrend.adapter = adapter
