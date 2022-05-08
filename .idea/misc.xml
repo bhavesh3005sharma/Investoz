@@ -3,17 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.129" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.375" />
-        <entry key="app/src/main/res/layout/fragment_about_us.xml" value="0.2953125" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_investments.xml" value="0.2953125" />
-        <entry key="app/src/main/res/layout/fragment_pending_investment.xml" value="0.2953125" />
-        <entry key="app/src/main/res/layout/layout_news.xml" value="0.24010416666666667" />
-        <entry key="app/src/main/res/layout/layout_startup_home.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/layout_trend_heading.xml" value="0.3010628843872277" />
-        <entry key="app/src/main/res/layout/layout_trend_startup.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.3098958333333333" />
+        <entry key="../../.gradle/caches/transforms-3/ef3f0f17448ca26d977db9bcb760fc55/transformed/appcompat-1.4.1/res/layout/support_simple_spinner_dropdown_item.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1975" />
+        <entry key="app/src/main/res/drawable/ic_forgot_password.xml" value="0.1975" />
+        <entry key="app/src/main/res/drawable/rectangle_orange_fill_corner.xml" value="0.1975" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_enter_details.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_enter_email_password.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_enter_number.xml" value="0.1369598388671875" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_investments.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25133056640625" />
+        <entry key="app/src/main/res/layout/fragment_pending_investment.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_user_type.xml" value="0.17996724446614581" />
+        <entry key="app/src/main/res/layout/intro_first_page.xml" value="0.16352996826171878" />
+        <entry key="app/src/main/res/layout/intro_second_page.xml" value="0.15534420289855072" />
+        <entry key="app/src/main/res/layout/intro_third_page.xml" value="0.15534420289855072" />
+        <entry key="app/src/main/res/layout/item_my_investment.xml" value="0.28864405988210656" />
+        <entry key="app/src/main/res/layout/item_pending_investment.xml" value="0.3292332967122396" />
+        <entry key="app/src/main/res/layout/layout_trend_heading.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/layout_trend_startup.xml" value="0.20833333333333334" />
       </map>
     </option>
   </component>
