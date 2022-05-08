@@ -16,8 +16,14 @@ class PendingAdapter(
 
     class LayoutViewHolder(private val binding: ItemPendingInvestmentBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(pendingInvestment: PendingInvestment, position: Int, context: Context) : ItemPendingInvestmentBinding {
-            if(position==1) binding.circleImageView2.setImageDrawable(context.getDrawable(R.drawable.sample_investment_logo2))
-            if(position==2) binding.circleImageView2.setImageDrawable(context.getDrawable(R.drawable.sample_investment_logo3))
+            if(position==1) {
+                binding.circleImageView2.setImageDrawable(context.getDrawable(R.drawable.sample_investment_logo2))
+                binding.status.text = "Sent"
+            }
+            if(position==2) {
+                binding.circleImageView2.setImageDrawable(context.getDrawable(R.drawable.sample_investment_logo3))
+                binding.status.text = "Documented"
+            }
             binding.pendingInvestment = pendingInvestment
             return binding
         }
