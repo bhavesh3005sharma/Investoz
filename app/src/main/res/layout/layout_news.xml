@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:text="@{news.about}"
+            android:text="Apna builds their first office !"
             android:maxLines="2"
             android:ellipsize="end"
             android:gravity="center"

@@ -5,9 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".home.AboutUsFragment">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="About Us" />
+        android:text="About Us"
+        android:src="@drawable/about_us"/>
 
 </FrameLayout>

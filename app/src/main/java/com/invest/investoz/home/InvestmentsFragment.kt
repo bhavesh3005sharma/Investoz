@@ -29,7 +29,7 @@ class InvestmentsFragment : Fragment() {
         "",
         "Campk12",
         "28.2L"),
-        MyInvestment("We build incredibly advanced codeless AI infrastructure to help brands grow exponentially. Strengthened with over 4 dozen  contextual and self-evolving proprietary AI models, the infrastructure forms the very heart of our products.",
+        MyInvestment("We build incredibly advanced codeless AI infrastructure to help brands grow exponentially.",
             "4.7%",
             "2%",
             "",
