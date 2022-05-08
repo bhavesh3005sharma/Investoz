@@ -31,7 +31,7 @@ class HomeFragment : Fragment() {
             "22.55",
             "Campk12",
             "56.67%",
-            true
+            false
         ),
         StartupModel("","Catfat India is a software company based out of Delhi, India, offering software development services to clients all over the world.",
             "24.5L",
@@ -47,7 +47,7 @@ class HomeFragment : Fragment() {
             "22.55",
             "Pixis",
             "22.67%",
-            true
+            false
         )
     )
     private val startUpsList = mutableListOf(
