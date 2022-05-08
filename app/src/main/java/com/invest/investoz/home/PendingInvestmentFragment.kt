@@ -28,7 +28,7 @@ class PendingInvestmentFragment : Fragment() {
             "",
             "50K",
             "Campk12"),
-        PendingInvestment("We build incredibly advanced codeless AI infrastructure to help brands grow exponentially. Strengthened with over 4 dozen  contextual and self-evolving proprietary AI models, the infrastructure forms the very heart of our products.",
+        PendingInvestment("We build incredibly advanced codeless AI infrastructure to help brands grow exponentially.",
             "5%",
             "",
             "60K",

@@ -26,20 +26,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="16sp"
+        android:text="@{startup.percentageEquity}"
         android:textColor="@color/black"
         android:gravity="center"
         android:paddingHorizontal="4dp"
         android:layout_weight="1"/>
 
-    <TextView
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@{startup.evaluation}"
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        android:gravity="center"
-        android:paddingHorizontal="4dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{startup.evaluation}"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center|right"
+            android:paddingHorizontal="4dp"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:gravity="center|left"
+            android:padding="3dp"
+            android:src="@{startup.goingUp?@drawable/ic_green_up_arrow:@drawable/ic_red_down_arrow}"
+            android:layout_weight="2"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
 
